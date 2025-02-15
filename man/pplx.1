@@ -1,0 +1,109 @@
+.TH PPLX 1 "February 2025" "Version 1.0.0" "User Commands"
+.SH NAME
+pplx \- Command-line interface for Perplexity AI
+.SH SYNOPSIS
+.B pplx
+[\fICOMMAND\fR] [\fIOPTIONS\fR]
+.SH DESCRIPTION
+.B pplx
+is a command-line interface for interacting with Perplexity AI's language and image generation capabilities. It provides thread management, conversation history, and export functionality.
+.SH COMMANDS
+.TP
+.B init
+Initialize or update configuration and API key
+.TP
+.B thread
+Thread management commands:
+.RS
+.TP
+.B list
+List all available threads
+.TP
+.B switch \fITHREAD_ID\fR
+Switch to specified thread
+.TP
+.B new "\fIMESSAGE\fR"
+Create new thread with initial message
+.RE
+.TP
+.B image
+Image generation commands:
+.RS
+.TP
+.B generate "\fIPROMPT\fR"
+Generate image from prompt
+.TP
+.B list
+List images in current thread
+.RE
+.TP
+.B ask "\fIQUESTION\fR"
+Ask a single question without creating a thread
+.TP
+.B export
+Export commands:
+.RS
+.TP
+.B md
+Export current thread to markdown
+.TP
+.B pdf
+Export current thread to PDF
+.RE
+.SH OPTIONS
+.TP
+.B \-h, \-\-help
+Show help message
+.TP
+.B \-v, \-\-version
+Show version information
+.SH CONFIGURATION
+Configuration is stored in:
+.IP
+${XDG_CONFIG_HOME:-$HOME/.config}/pplx/config.json
+.PP
+Thread data is stored in:
+.IP
+${XDG_DATA_HOME:-$HOME/.local/share}/pplx/threads/
+.SH EXAMPLES
+.TP
+Initialize configuration:
+.B pplx init
+.TP
+Create new thread:
+.B pplx thread new "Initial question"
+.TP
+Generate image:
+.B pplx image generate "A cyberpunk cat"
+.TP
+Export thread:
+.B pplx export pdf
+.SH FILES
+.TP
+.I ~/.config/pplx/config.json
+Configuration file
+.TP
+.I ~/.local/share/pplx/threads/
+Thread storage directory
+.SH ENVIRONMENT
+.TP
+.B XDG_CONFIG_HOME
+Base directory for configuration files
+.TP
+.B XDG_DATA_HOME
+Base directory for data files
+.SH BUGS
+Report bugs to: https://github.com/sommja/pplx_clai.git/issues
+.SH AUTHOR
+Written by Jan Sommer
+.SH COPYRIGHT
+Copyright © 2025 Jan Sommer
+.PP
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+.br
+This is free software: you are free to change and redistribute it.
+.br
+There is NO WARRANTY, to the extent permitted by law.
+.SH SEE ALSO
+Full documentation at: https://github.com/sommja/pplx_clai.git
+
