@@ -49,48 +49,48 @@ pplx
 
 ### [Thread Management](pplx://action/followup)
 
-## List threads
+### List threads
 
 ```
 pplx thread list
 ```
 
-## Create new thread
+### Create new thread
 
 ```
 pplx thread new "Initial question"
 ```
 
-## Switch thread
+### Switch thread
 
 ```
 pplx thread switch <thread_id>
 ```
 
 
-### [Image Generation](pplx://action/followup)
+## [Image Generation](pplx://action/followup)
 
-## Generate image
+### Generate image
 
 ```
 pplx image generate "A cyberpunk cat in neon colors"
 ```
 
-## List images in current thread
+### List images in current thread
 
 ```
 pplx image list 
 ```
 
-### [Export](pplx://action/followup)
+## [Export](pplx://action/followup)
 
-## Export to markdown
+### Export to markdown
 
 ```
 pplx export md
 ```
 
-## Export to PDF
+### Export to PDF
 
 ```
 pplx export pdf
