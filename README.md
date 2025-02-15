@@ -47,7 +47,7 @@ Simply run:
 pplx
 ```
 
-### [Thread Management](pplx://action/followup)
+## [Thread Management](pplx://action/followup)
 
 ### List threads
 
@@ -97,7 +97,7 @@ pplx export pdf
 ```
 
 ## [Directory Structure](pplx://action/followup)
-
+```
 ~/.config/pplx/
 └── config.json # Configuration file
 
@@ -105,7 +105,7 @@ pplx export pdf
 ├── scripts/ # Script files
 ├── completions/ # Bash completion
 └── threads/ # Thread storage
-
+```
 
 ## [Contributing](pplx://action/followup)
 
